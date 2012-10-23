@@ -13,12 +13,14 @@
 -Fy obj
 -Fo obj
 -v
+-we
 
 ##sources
 -lib system
 -lib adv3/adv3
 -source src/waylaid.t
 -source src/derrigauht_passage.t
+-source src/derrigauht_cave.t
 
 -res
 GameInfo.txt
