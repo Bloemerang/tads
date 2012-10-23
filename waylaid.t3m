@@ -17,7 +17,8 @@
 ##sources
 -lib system
 -lib adv3/adv3
--source src/waylaid
+-source src/waylaid.t
+-source src/derrigauht_passage.t
 
 -res
 GameInfo.txt
