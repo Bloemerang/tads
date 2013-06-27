@@ -21,6 +21,7 @@
 -source src/waylaid
 -source src/derrigauht_passage
 -source src/derrigauht_cave
+-source src/melee_weapons
 
 -res
 GameInfo.txt

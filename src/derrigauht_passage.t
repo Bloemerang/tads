@@ -12,6 +12,26 @@ derrigauht_roadside: OutdoorRoom 'Derrigauht Roadside'
     west = derrigauht_pass
 ;
 
++ chest: OpenableContainer 'small chest' 'chest' "A small chest."
+    dobjFor(Attack)
+    {
+        preCond = [touchObj]
+        verify() {}
+    }
+
+    dobjFor(AttackWith)
+    {
+        preCond = [touchObj]
+        verify() {}
+        action() {}
+    }
+;
+
+++ thing1: Thing    'thing1' 'thing1' "It's a <<name>>";
+++ thing2: Wearable 'thing2' 'thing2' "It's a <<name>>";
+++ thing3: Wearable 'thing3' 'thing3' "It's a <<name>>";
+++ blunt_sword: Sword 'blunt sword' 'blunt sword' "It's a blunt sword";
+
 derrigauht_pass: OutdoorRoom 'Derrigauht Pass'
     "As you move farther into the desolate pass a sense of foreboding overtakes you. The cliffs continue along for what looks to be another few miles, but 
     the path is much rockier here and difficult to navigate. Tucked into the north wall of the pass are some caves, almost completely obscured by boulders. 
@@ -28,10 +48,10 @@ derrigauht_gate: OutdoorRoom 'Derrigauht Gate'
    // Make rubble examinable 
 
     east = derrigauht_pass
-    ;
+;
 
 derrigauht_cave_entrance: OutdoorRoom 'Derrigauht Cave Entrance'
     "parklies.."
 
-    down = derrigauht_cave
+    destination = derrigauht_cave
 ;
